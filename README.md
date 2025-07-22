@@ -1,12 +1,91 @@
-# React + Vite
+# 🚀 CryptoPlace — ReactJS Crypto Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **CryptoPlace**, a sleek, responsive cryptocurrency tracker built with **ReactJS + Vite**.  
+Search, sort, and explore real-time coin data fetched directly from the CoinGecko API.  
+Includes user authentication using `localStorage`.
 
-Currently, two official plugins are available:
+![CryptoPlace Screenshot](./src/assets/screenshot.png) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Features
+
+✅ Real-time crypto market data  
+✅ Sort by Rank, Price, Market Cap  
+✅ Search any coin by name  
+✅ Pagination (10 coins per page)  
+✅ Login & Signup using localStorage  
+✅ Responsive design  
+✅ Clean, readable UI
+
+---
+
+## 📸 Screenshots
+
+| Home Page | Coin Page |
+|-----------|-----------|
+| ![Home](./src/assets/home.png) | ![Coin](./src/assets/coin.png) |
+
+> Add screenshots under `/src/assets/` and update paths if needed.
+
+---
+
+## ⚙️ Tech Stack
+
+- ⚛️ ReactJS
+- ⚡ Vite
+- 🌐 CoinGecko API
+- 🧠 Context API (for global state)
+- 🎨 CSS
+- 💾 localStorage (for auth)
+
+---
+
+## 📂 Folder Structure
+
+```bash
+cryptoplace/
+├── public/
+├── src/
+│   ├── assets/          # Images, logos, screenshots
+│   ├── components/      # Navbar, Footer
+│   ├── context/         # CoinContext.js (global state)
+│   ├── pages/           # Home, Coin, Blog, Features, Pricing, Signup
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── vite.config.js
+└── README.md
+```
+
+1. Clone the repository
+git clone https://github.com/jai72-byte/CryptoPlace-using-ReactJS.git
+cd CryptoPlace-using-ReactJS
+
+2. Install dependencies
+npm install
+
+3.Run the development server
+npm run dev
+
+
+
+**Authentication (Demo)**
+Signup form collects name, email, password
+Stores data in localStorage
+Login validates against localStorage
+
+
+ **API Used**
+[🔗 CoinGecko Public API](https://www.coingecko.com/en/api)
+
+
+**Author**
+Made  by [Jai Rakesh](https://github.com/jai72-byte)
+
+
+
+
+
+
