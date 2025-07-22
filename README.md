@@ -4,7 +4,7 @@ Welcome to **CryptoPlace**, a sleek, responsive cryptocurrency tracker built wit
 Search, sort, and explore real-time coin data fetched directly from the CoinGecko API.  
 Includes user authentication using `localStorage`.
 
-![CryptoPlace Screenshot](./src/assets/screenshot.png) 
+
 
 ---
 
@@ -22,11 +22,6 @@ Includes user authentication using `localStorage`.
 ---
 
 ## 📸 Screenshots
-
-| Home Page | Coin Page |
-|-----------|-----------|
-| ![Home](./src/assets/home.png) | ![Coin](./src/assets/coin.png) |
-
 > Add screenshots under `/src/assets/` and update paths if needed.
 
 ---
