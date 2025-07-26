@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import arrow_icon from "../../assets/arrow_icon.png";
 import logo from "../../assets/logo.png";
@@ -7,6 +7,20 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const { setcurrency } = useContext(CoinContext);
+  const [hideNavbar, setHideNavbar] = useState(false);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 7500) {
+      setHideNavbar(true);
+    } else {
+      setHideNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, []);
 
   const currencyHandler = (event) => {
     switch (event.target.value) {
@@ -21,12 +35,11 @@ const Navbar = () => {
         break;
       default:
         setcurrency({ name: "usd", symbol: "$" });
-        break;
     }
   };
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${hideNavbar ? "hidden" : "active"}`}>
       <Link to="/">
         <img src={logo} alt="Cryptoplace Logo" className="logo" />
       </Link>
@@ -52,7 +65,6 @@ const Navbar = () => {
           <option value="eur">EUR</option>
           <option value="inr">INR</option>
         </select>
-
         <Link to="/signup">
           <button>
             Sign Up

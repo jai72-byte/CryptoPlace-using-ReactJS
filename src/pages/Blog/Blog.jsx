@@ -12,7 +12,7 @@ function Blog() {
 
   return (
     <div className="blog-container">
-      <h2>Latest Blog Posts</h2>
+      <h2 className="blog-title">Latest Blog Posts</h2>
       {posts.map((post) => (
         <div key={post.id} className="blog-card">
           <h3>{post.title}</h3>

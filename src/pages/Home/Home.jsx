@@ -56,7 +56,7 @@ const Home = () => {
         <h1>
           Largest
           <br />
-          Crypto Marketplaces
+          Crypto Marketplace
         </h1>
         <p>
           Welcome to the world's largest cryptocurrency marketplace. Sign up to

@@ -1,7 +1,11 @@
 .blog-container {
   max-width: 800px;
   margin: 60px auto;
-  padding: 0 1rem;
+  padding: 6rem 0 1rem;
+}
+.blog-container .blog-title {
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .blog-card {
