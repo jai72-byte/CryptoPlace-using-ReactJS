@@ -12,7 +12,7 @@ function Features() {
 
   return (
     <div className="features-container">
-      <h2>Platform Features</h2>
+      <h2>Platform Features and Functions</h2>
       <div className="features-grid">
         {features.map((f, i) => (
           <div key={i} className="feature-card">
