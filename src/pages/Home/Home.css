@@ -19,7 +19,6 @@
 
 .hero p {
   width: 85%;
-  color: #d8d8d8;
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
@@ -55,7 +54,6 @@
 .hero button {
   border: none;
   background: #5f1fd8;
-  color: black;
   font-weight: 600;
   font-size: 14px;
   padding: 8px 16px;
@@ -71,7 +69,6 @@
 .crypto-table {
   max-width: 800px;
   margin: auto;
-  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
   border-radius: 15px;
 }
 .table-layout {

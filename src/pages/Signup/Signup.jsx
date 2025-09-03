@@ -28,18 +28,19 @@ function SignUp() {
   }, [showSuccess]);
 
   return (
-    <div className="signup-wrapper">
+    <div className="signup-wrapper bg-[linear-gradient(#f0f6ff,#e8f1ff,#edf0ff)] dark:bg-[linear-gradient(#0b004e,#1d152f,#002834)]">
       {showSuccess && (
         <div className="success-popup">✅ Successfully Registered!</div>
       )}
 
-      <form className="signup-form" onSubmit={handleSubmit}>
+      <form className="signup-form text-black dark:text-white dark:backdrop-blur-md" onSubmit={handleSubmit}>
         <h2>Create an Account</h2>
 
         <div className="input-group">
           <label>Full Name</label>
           <input
             type="text"
+            className="bg-gray-300 dark:focus:transition-colors dark:focus:duration-300 dark:focus:ease-in-out dark:focus:bg-white/20 dark:bg-white/10"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             placeholder="John Doe"
@@ -51,6 +52,7 @@ function SignUp() {
           <label>Email Address</label>
           <input
             type="email"
+            className="bg-gray-300 dark:focus:transition-colors dark:focus:duration-300 dark:focus:ease-in-out dark:focus:bg-white/20 dark:bg-white/10"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@example.com"
@@ -62,6 +64,7 @@ function SignUp() {
           <label>Password</label>
           <input
             type="password"
+            className="bg-gray-300 dark:focus:transition-colors dark:focus:duration-300 dark:focus:ease-in-out dark:focus:bg-white/20 dark:bg-white/10"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"

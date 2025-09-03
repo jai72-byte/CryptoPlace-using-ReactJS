@@ -1,7 +1,8 @@
 .spinner {
   display: grid;
   place-self: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .spin {
   width: 65px;

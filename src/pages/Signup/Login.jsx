@@ -30,16 +30,17 @@ function Login() {
   }, [showSuccess]);
 
   return (
-    <div className="signup-wrapper">
+    <div className="signup-wrapper bg-[linear-gradient(#f0f6ff,#e8f1ff,#edf0ff)] dark:bg-[linear-gradient(#0b004e,#1d152f,#002834)]">
       {showSuccess && <div className="success-popup">✅ Login Successful!</div>}
 
-      <form className="signup-form" onSubmit={handleLogin}>
+      <form className="signup-form text-black dark:text-white dark:backdrop-blur-md" onSubmit={handleLogin}>
         <h2>Login</h2>
 
         <div className="input-group">
           <label>Email Address</label>
           <input
             type="email"
+            className="bg-gray-300 dark:focus:transition-colors dark:focus:duration-300 dark:focus:ease-in-out dark:focus:bg-white/20 dark:bg-white/10"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@example.com"
@@ -51,6 +52,7 @@ function Login() {
           <label>Password</label>
           <input
             type="password"
+            className="bg-gray-300 dark:focus:transition-colors dark:focus:duration-300 dark:focus:ease-in-out dark:focus:bg-white/20 dark:bg-white/10"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"
