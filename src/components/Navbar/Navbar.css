@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 10%;
-  background: rgba(0, 0, 0, 0.85); /* transparent black */
   backdrop-filter: blur(10px); /* frosted-glass look */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
@@ -37,11 +36,7 @@
 .navbar li {
   cursor: pointer;
   font-weight: 500;
-  color: #ccc;
   transition: color 0.2s;
-}
-.navbar li:hover {
-  color: #fff;
 }
 .nav-right {
   display: flex;
@@ -54,18 +49,14 @@
 
   padding: 5px 8px;
   border-radius: 6px;
-  border: 2px solid white;
   background: transparent;
-  color: white;
 }
 
 .navbar option {
   font-size: 15px;
-  background-color: #09005c;
-  color: white;
 }
 
-.navbar button {
+.navbar #signupBtn {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -73,24 +64,18 @@
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
-  color: #000;
-  background: #fff;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
-}
-.navbar button:hover {
-  background: #eaeaea;
 }
 
-.navbar button img {
+.navbar #signupBtn img {
   width: 13px;
 }
 @media (max-width: 900px) {
   .navbar {
     padding: 20px 8%;
   }
-  .navbar button {
+  .navbar #signupBtn {
     gap: 8px;
     padding: 8px 18px;
     font-size: 14px;
@@ -103,7 +88,7 @@
   .navbar ul {
     display: none;
   }
-  .navbar button img {
+  .navbar #signupBtn img {
     width: 12px;
   }
 }

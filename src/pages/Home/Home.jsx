@@ -51,9 +51,9 @@ const Home = () => {
   const totalPages = Math.ceil(displayCoin.length / itemsPerPage);
 
   return (
-    <div className="home">
+    <div className="home bg-[linear-gradient(#f0f6ff,#e8f1ff,#edf0ff)] text-black dark:bg-[linear-gradient(#0b004e,#1d152f,#002834)] dark:text-white">
       <div className="hero">
-        <h1>
+        <h1 className="font-bold">
           Largest
           <br />
           Crypto Marketplace
@@ -76,11 +76,11 @@ const Home = () => {
               <option key={c.id} value={c.name} />
             ))}
           </datalist>
-          <button type="submit">Search</button>
+          <button className="text-white" type="submit">Search</button>
         </form>
       </div>
 
-      <div className="crypto-table">
+      <div className="crypto-table text-black dark:text-white bg-[linear-gradient(rgba(84,3,255,0.15),rgba(105,2,153,0.15))]">
         <div className="table-header-controls">
           <label htmlFor="sort-select">Sort by:</label>
           <select

@@ -51,7 +51,7 @@ const Coin = () => {
 
   if (coindata && historialdata) {
     return (
-      <div className="coin">
+      <div className="coin bg-[linear-gradient(#f0f6ff,#e8f1ff,#edf0ff)] dark:bg-[linear-gradient(#0b004e,#1d152f,#002834)] text-black dark:text-white">
         <div className="coin-name">
           <img src={coindata.image.large} alt="" />
           <p>
@@ -104,7 +104,7 @@ const Coin = () => {
     );
   } else {
     return (
-      <div className="spinner">
+      <div className="spinner bg-[linear-gradient(#f0f6ff,#e8f1ff,#edf0ff)] dark:bg-[linear-gradient(#0b004e,#1d152f,#002834)]">
         <div className="spin"></div>
       </div>
     );

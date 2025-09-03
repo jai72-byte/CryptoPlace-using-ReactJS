@@ -7,7 +7,6 @@
 }
 
 .signup-form {
-  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 16px;
@@ -15,7 +14,6 @@
   width: 100%;
   max-width: 400px;
   backdrop-filter: blur(12px);
-  color: white;
 }
 
 .signup-form h2 {
@@ -32,7 +30,6 @@
 .input-group label {
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
-  color: #ccc;
 }
 
 .input-group input {
@@ -40,18 +37,7 @@
   border: none;
   border-radius: 8px;
   outline: none;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
   font-size: 1rem;
-  transition: background 0.3s ease;
-}
-
-.input-group input::placeholder {
-  color: #aaa;
-}
-
-.input-group input:focus {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .signup-form button {
